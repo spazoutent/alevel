@@ -25,14 +25,21 @@
 
   <div class="h-24"></div>
 
-  <section id="home" class="hero-section w-full h-screen relative">
-  <video autoplay muted loop playsinline class="hero-video" oncontextmenu="return false;">
+  <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    oncontextmenu="return false;" 
+    class="hero-video absolute top-0 left-0 w-full h-full object-cover z-0"
+  >
     <source src="assets/halo.mp4" type="video/mp4">
     <source src="assets/halo.webm" type="video/webm">
     Your browser does not support the video tag.
   </video>
-  
 </section>
+
 
 
   <section class="text-center py-16 px-6 md:px-20">
