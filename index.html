@@ -1,66 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A-Level Entertainment</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A-Level Entertainment</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 </head>
-<body class="bg-black text-white font-sans relative">
-
-  <!-- Fixed Header with Logo + Navigation -->
-  <header class="fixed top-0 left-0 z-50 w-full bg-black bg-opacity-80 px-6 py-4 flex items-center justify-between flex-wrap">
-    <a href="/" class="flex items-center space-x-2">
-      <img src="https://i.imgur.com/kyiJcKC.png" alt="A-Level Logo" class="w-32 md:w-40 h-auto" />
-    </a>
-    <nav class="mt-4 md:mt-0 w-full md:w-auto flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-base text-white">
-      <a href="#home" class="hover:text-gray-300 uppercase">Home</a>
-      <a href="#artists" class="hover:text-gray-300 uppercase">Artists</a>
-      <a href="#about" class="hover:text-gray-300 uppercase">About</a>
-      <a href="#contact" class="hover:text-gray-300 uppercase">Contact</a>
-    </nav>
-  </header>
-
-  <div class="h-24"></div>
-
-  <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
-  <video 
-    autoplay 
-    muted 
-    loop 
-    playsinline 
-    oncontextmenu="return false;" 
-    class="hero-video absolute top-0 left-0 w-full h-full object-cover z-0"
-  >
-    <source src="assets/halo.mp4" type="video/mp4">
-    <source src="assets/halo.webm" type="video/webm">
+<body class="bg-black text-white font-sans relative overflow-x-hidden">
+<!-- Fixed Header with Logo + Navigation -->
+<header class="fixed top-0 left-0 z-50 w-full bg-black bg-opacity-80 px-6 py-4 flex items-center justify-between flex-wrap">
+<a class="flex items-center space-x-2" href="#home">
+<img alt="A-Level Logo" class="w-32 md:w-40 h-auto" src="https://i.imgur.com/kyiJcKC.png"/>
+</a>
+<nav class="mt-4 md:mt-0 w-full md:w-auto flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-base text-white">
+<a class="hover:text-gray-300 uppercase" href="#home">Home</a>
+<a class="hover:text-gray-300 uppercase" href="#artists">Artists</a>
+<a class="hover:text-gray-300 uppercase" href="#about">About</a>
+<a class="hover:text-gray-300 uppercase" href="#contact">Contact</a>
+</nav>
+</header>
+<div class="h-24"></div><section class="block md:hidden w-full relative overflow-hidden" id="home"><div class="h-24 md:hidden"></div>
+<video autoplay="" class="w-full h-auto object-cover relative z-0 block" loop="" muted="" oncontextmenu="return false;" playsinline="">
+<source src="assets/halo.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video></section>
+<section class="hidden md:block hero-section w-full aspect-video relative" id="home">
+<video autoplay="" class="w-full h-full object-cover absolute top-0 left-0 z-0" loop="" muted="" oncontextmenu="return false;" playsinline="">
+<source src="assets/halo.mp4" type="video/mp4"/>
     Your browser does not support the video tag.
   </video>
 </section>
-
-
-
-  <section class="text-center py-16 px-6 md:px-20">
-    <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-wide text-yellow-400">A-Level Entertainment</h1>
-    <p class="mt-4 text-lg md:text-xl text-gray-300">Music | Vision | Culture</p>
-  </section>
-
-  <section id="about" class="py-20 px-6 md:px-20 text-center fade-in">
-    <h2 class="text-3xl md:text-5xl font-semibold uppercase mb-6 text-yellow-400">Our Story</h2>
-    <p class="max-w-3xl mx-auto text-gray-400 leading-relaxed">
+<section class="md:py-16 text-center px-4 md:px-20 md:pt-16 py-6">
+<h1 class="text-5xl md:text-7xl font-bold uppercase tracking-wide text-yellow-400">A-Level Entertainment</h1>
+<p class="mt-4 text-lg md:text-xl text-gray-300">Music | Vision | Culture</p>
+</section>
+<section class="md:py-16 fade-in text-center px-4 md:px-20 py-6" id="about">
+<h2 class="text-3xl md:text-5xl font-semibold uppercase mb-6 text-yellow-400">Our Story</h2>
+<p class="max-w-3xl mx-auto text-gray-400 leading-relaxed">
       A-Level Entertainment is a visionary creative company built for the now. We tell stories through sound, style, and soul—
-      creating culture with everything we touch. From chart-topping hits to groundbreaking artists, we're redefining what a label can be. <a href="about.html" class="text-yellow-400 underline hover:text-yellow-300">more</a>
-    </p>
-  </section>
-
-  <section id="artists" class="px-6 md:px-20 py-16 space-y-20 fade-in">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-  <img src="https://i.imgur.com/LYmayUC.jpg" alt="BIG TONA" class="w-full h-auto object-cover" />
-  <div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
-    <h3 class="absolute -top-24 left-0 text-[6rem] font-extrabold uppercase -mt-40 -ml-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">BIG TONA</h3>
-    <p>Big Tona is a lyrical force and cultural icon reshaping the sound of modern hip hop.
+      creating culture with everything we touch. From chart-topping hits to groundbreaking artists, we're redefining what a label can be. <a class="text-yellow-400 underline hover:text-yellow-300" href="about.html">more</a>
+</p>
+</section>
+<section class="md:py-16 fade-in px-4 md:px-20 space-y-20 py-6" id="artists">
+<div class="grid md:grid-cols-2 gap-6 items-center">
+<h3 class="block md:hidden text-3xl font-bold text-yellow-400 uppercase text-center mb-4">BIG TONA</h3><img alt="BIG TONA" class="w-full h-auto object-cover" src="https://i.imgur.com/LYmayUC.jpg"/>
+<div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
+<h3 class="absolute -top-24 left-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -ml-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">BIG TONA</h3>
+<p>Big Tona is a lyrical force and cultural icon reshaping the sound of modern hip hop.
 With gritty storytelling and razor-sharp delivery, he’s earned his stripes as a respected voice from the underground to the mainstage.
 A Toronto trailblazer, Big Tona has shared the stage with legends like Nas and Ghostface Killah.
 His critically acclaimed albums Black Mirror and The Ivy League showcase a masterclass in raw lyricism.
@@ -70,29 +59,27 @@ Known for his punchy flow and socially charged bars, his pen never pulls punches
 Tona’s music bridges street narratives with elevated thought — a voice for the now and next.
 His latest project delivers timeless beats and sharp conviction, proving he's far from done.
 Big Tona doesn’t just rap — he builds legacy through sound.</p>
-
-    <!-- Social Media Icons -->
-    <div class="mt-4 flex space-x-4 text-white text-xl">
-      <a href="https://instagram.com/bigtona" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://tiktok.com/@bigtona" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://open.spotify.com/artist/bigtona" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-spotify"></i>
-      </a>
-      <a href="https://youtube.com/@bigtona" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-  </div>
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/bigtona" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@bigtona" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/bigtona" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@bigtona" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
 </div>
-
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-  <div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
-    <h3 class="absolute -top-24 right-0 text-[6rem] font-extrabold uppercase -mt-40 -mr-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">LALove The Boss</h3>
-    <p>LALove The Boss is a fearless powerhouse blending bars, beauty, and business.
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 items-center">
+<div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full hidden md:block">
+<h3 class="absolute -top-24 right-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -mr-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">LALove The Boss</h3>
+<p>LALove The Boss is a fearless powerhouse blending bars, beauty, and business.
 Hailing from Maryland, she’s built a brand that’s as unshakable as her flow.
 Her viral freestyle videos have amassed millions of views across Instagram and TikTok.
 With a sound that fuses hip hop grit and southern flair, she’s redefining femme rap on her own terms.
@@ -102,32 +89,57 @@ Her debut single “Get Money” set the tone — unapologetic, bold, and bossed
 She’s performed live across major U.S. cities, turning stages into her personal runway.
 More than an artist, she’s a movement — inspiring women to own their voice and vision.
 LALove The Boss isn’t next — she’s now.</p>
-
-    <!-- Social Media Icons -->
-    <div class="mt-4 flex space-x-4 text-white text-xl">
-      <a href="https://instagram.com/lalovetheboss" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://tiktok.com/@lalovetheboss" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://open.spotify.com/artist/lalovetheboss" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-spotify"></i>
-      </a>
-      <a href="https://youtube.com/@lalovetheboss" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-  </div>
-  <img src="https://i.imgur.com/wKCbtin.jpg" alt="LALove The Boss" class="w-full h-auto object-cover ml-auto" />
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/lalovetheboss" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@lalovetheboss" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/lalovetheboss" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@lalovetheboss" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
 </div>
-
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-  <img src="https://i.imgur.com/DcSTdTu.jpg" alt="Moe Music" class="w-full h-auto object-cover" />
-  <div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
-    <h3 class="absolute -top-24 left-0 text-[6rem] font-extrabold uppercase -mt-40 -ml-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">Moe Music</h3>
-    <p>Moe Music is a genre-blending vocalist known for smooth melodies and soulful depth.
-Hailing from New York, he fuses R&B, hip hop, and gospel into a sound that’s rich and timeless.
+</div>
+<h3 class="block md:hidden text-3xl font-bold text-yellow-400 uppercase text-center mb-4">LALove The Boss</h3><img alt="LALove The Boss" class="w-full h-auto object-cover ml-auto" src="https://i.imgur.com/wKCbtin.jpg"/><div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full md:block block md:hidden">
+<h3 class="absolute -top-24 right-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -mr-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">LALove The Boss</h3>
+<p>LALove The Boss is a fearless powerhouse blending bars, beauty, and business.
+Hailing from Maryland, she’s built a brand that’s as unshakable as her flow.
+Her viral freestyle videos have amassed millions of views across Instagram and TikTok.
+With a sound that fuses hip hop grit and southern flair, she’s redefining femme rap on her own terms.
+A social media juggernaut, LALove boasts over 1 million followers and counting.
+She’s been featured in campaigns for Fashion Nova, Revolt, and Rolling Out Magazine.
+Her debut single “Get Money” set the tone — unapologetic, bold, and bossed up.
+She’s performed live across major U.S. cities, turning stages into her personal runway.
+More than an artist, she’s a movement — inspiring women to own their voice and vision.
+LALove The Boss isn’t next — she’s now.</p>
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/lalovetheboss" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@lalovetheboss" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/lalovetheboss" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@lalovetheboss" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 items-center">
+<h3 class="block md:hidden text-3xl font-bold text-yellow-400 uppercase text-center mb-4">Moe Music</h3><img alt="Moe Music" class="w-full h-auto object-cover" src="https://i.imgur.com/DcSTdTu.jpg"/>
+<div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
+<h3 class="absolute -top-24 left-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -ml-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">Moe Music</h3>
+<p>Moe Music is a genre-blending vocalist known for smooth melodies and soulful depth.
+Hailing from New York, he fuses R&amp;B, hip hop, and gospel into a sound that’s rich and timeless.
 His debut EP Moments in Time gained traction on Apple Music and Spotify editorial playlists.
 With heartfelt hooks and real-life lyrics, Moe connects deeply with every listener.
 He’s performed live at SOBs, Brooklyn Bowl, and opened for artists like Eric Bellinger and BJ The Chicago Kid.
@@ -136,30 +148,28 @@ He’s been featured in Essence, Vibe, and on Hot 97’s Who’s Next platform.
 From underground stages to national spotlights, Moe is building a loyal fanbase one verse at a time.
 His voice cuts through the noise — warm, powerful, and unforgettable.
 Moe Music isn’t chasing trends — he’s creating timeless moments.</p>
-
-    <!-- Social Media Icons -->
-    <div class="mt-4 flex space-x-4 text-white text-xl">
-      <a href="https://instagram.com/moemusic" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://tiktok.com/@moemusic" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://open.spotify.com/artist/moemusic" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-spotify"></i>
-      </a>
-      <a href="https://youtube.com/@moemusic" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-  </div>
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/moemusic" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@moemusic" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/moemusic" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@moemusic" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
 </div>
-
-   <div class="grid md:grid-cols-2 gap-6 items-center">
-  <div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
-    <h3 class="absolute -top-24 right-0 text-[6rem] font-extrabold uppercase -mt-40 -mr-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">Teemanay</h3>
-    <p>Teemanay is the Afro-fusion prince bringing global vibes with street soul.
-Born in Nigeria and based in New York, he fuses Afrobeats, dancehall, and R&B into pure energy.
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 items-center">
+<div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full hidden md:block">
+<h3 class="absolute -top-24 right-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -mr-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">Teemanay</h3>
+<p>Teemanay is the Afro-fusion prince bringing global vibes with street soul.
+Born in Nigeria and based in New York, he fuses Afrobeats, dancehall, and R&amp;B into pure energy.
 A Grammy-nominated artist, Teemanay is elevating the genre with global recognition.
 His breakout single Wole racked up over 1 million streams and caught attention worldwide.
 He’s been featured on MTV Base Africa, Audiomack Trending, and OkayAfrica.
@@ -168,31 +178,56 @@ Known for his infectious hooks and electrifying stage presence, he commands ever
 He’s built a loyal fanbase across Africa, the U.S., and the Caribbean with nonstop momentum.
 From viral dance challenges to sold-out showcases, his wave is undeniable.
 Teemanay isn’t following the Afrobeat movement — he’s leading it.</p>
-
-    <!-- Social Media Icons -->
-    <div class="mt-4 flex space-x-4 text-white text-xl">
-      <a href="https://instagram.com/teemanay" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://tiktok.com/@teemanay" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://open.spotify.com/artist/teemanay" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-spotify"></i>
-      </a>
-      <a href="https://youtube.com/@teemanay" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-  </div>
-  <img src="https://i.imgur.com/tj4rrLF.jpg" alt="Teemanay" class="w-full h-auto object-cover ml-auto" />
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/teemanay" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@teemanay" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/teemanay" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@teemanay" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
 </div>
-
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-  <img src="https://i.imgur.com/6SlfrJH.jpg" alt="SNACO" class="w-full h-auto object-cover" />
-  <div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
-    <h3 class="absolute -top-24 left-0 text-[6rem] font-extrabold uppercase -mt-40 -ml-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">SNACO</h3>
-    <p>SNACO is Georgia’s next-up spitter making undeniable noise in the new wave of hip hop.
+</div>
+<h3 class="block md:hidden text-3xl font-bold text-yellow-400 uppercase text-center mb-4">Teemanay</h3><img alt="Teemanay" class="w-full h-auto object-cover ml-auto" src="https://i.imgur.com/tj4rrLF.jpg"/><div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full md:block block md:hidden">
+<h3 class="absolute -top-24 right-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -mr-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">Teemanay</h3>
+<p>Teemanay is the Afro-fusion prince bringing global vibes with street soul.
+Born in Nigeria and based in New York, he fuses Afrobeats, dancehall, and R&amp;B into pure energy.
+A Grammy-nominated artist, Teemanay is elevating the genre with global recognition.
+His breakout single Wole racked up over 1 million streams and caught attention worldwide.
+He’s been featured on MTV Base Africa, Audiomack Trending, and OkayAfrica.
+Teemanay has performed alongside Afrobeat giants like Davido, Burna Boy, and Wande Coal.
+Known for his infectious hooks and electrifying stage presence, he commands every room he steps in.
+He’s built a loyal fanbase across Africa, the U.S., and the Caribbean with nonstop momentum.
+From viral dance challenges to sold-out showcases, his wave is undeniable.
+Teemanay isn’t following the Afrobeat movement — he’s leading it.</p>
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/teemanay" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@teemanay" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/teemanay" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@teemanay" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 items-center">
+<h3 class="block md:hidden text-3xl font-bold text-yellow-400 uppercase text-center mb-4">SNACO</h3><img alt="SNACO" class="w-full h-auto object-cover" src="https://i.imgur.com/6SlfrJH.jpg"/>
+<div class="relative text-left text-sm md:text-base text-gray-300 leading-relaxed w-full">
+<h3 class="absolute -top-24 left-0 text-4xl md:text-[6rem] font-extrabold uppercase -mt-40 -ml-32 leading-none z-10 text-yellow-400 drop-shadow-[0_0_6px_#FFD700] hidden md:block">SNACO</h3>
+<p>SNACO is Georgia’s next-up spitter making undeniable noise in the new wave of hip hop.
 With a gritty Southern cadence and razor-sharp bars, he’s carving a name all his own.
 A newcomer with momentum, SNACO has already built a loyal following of 14,000+ fans and counting.
 His singles like Demon Time, Cash App, and Whiplash are heating up playlists and timelines.
@@ -202,47 +237,42 @@ He’s been featured across indie blogs, TikTok trends, and underground Spotify 
 From street anthems to trunk-rattling bangers, his sound is built for the grind and the glow-up.
 Each drop grows his audience and sharpens his reputation as one to watch.
 SNACO is building his own lane, bar for bar.</p>
-
-    <!-- Social Media Icons -->
-    <div class="mt-4 flex space-x-4 text-white text-xl">
-      <a href="https://instagram.com/snaco" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://tiktok.com/@snaco" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://open.spotify.com/artist/snaco" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-spotify"></i>
-      </a>
-      <a href="https://youtube.com/@snaco" target="_blank" class="hover:text-yellow-400">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-  </div>
+<!-- Social Media Icons -->
+<div class="mt-4 flex space-x-4 text-white text-xl">
+<a class="hover:text-yellow-400" href="https://instagram.com/snaco" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://tiktok.com/@snaco" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://open.spotify.com/artist/snaco" target="_blank">
+<i class="fab fa-spotify"></i>
+</a>
+<a class="hover:text-yellow-400" href="https://youtube.com/@snaco" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
 </div>
-  </section>
-
-  <section>
-    <div class="flex justify-center py-12">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3bXCz1iR7vtLPNrAiK2CI4?utm_source=generator" width="80%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-  </section>
-
-  <section id="contact" class="py-16 text-center fade-in">
-    <h3 class="text-2xl md:text-4xl font-semibold mb-4 uppercase text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">Let’s Build Together</h3>
-    <p class="text-gray-400 mb-6">Looking to connect? Email us at <a href="mailto:info@a-levelrntertainmentgroup.com" class="underline">info@a-levelrntertainmentgroup.com</a></p>
-    <div class="flex justify-center space-x-6 text-lg">
-      <a href="#" class="hover:text-gray-300">Instagram</a>
-      <a href="#" class="hover:text-gray-300">Twitter</a>
-      <a href="#" class="hover:text-gray-300">YouTube</a>
-    </div>
-  </section>
-
-  <footer class="py-6 text-center text-sm text-gray-600">
-    &copy; 2025 A-Level Entertainment. All rights reserved.
+</div>
+</div>
+</section>
+<section class="md:py-16 py-6">
+<div class="flex justify-center py-12">
+<iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" frameborder="0" height="352" src="https://open.spotify.com/embed/playlist/3bXCz1iR7vtLPNrAiK2CI4?utm_source=generator" style="border-radius:12px" width="80%"></iframe>
+</div>
+</section>
+<section class="fade-in text-center md:py-16 py-6" id="contact">
+<h3 class="text-2xl md:text-4xl font-semibold mb-4 uppercase text-yellow-400 drop-shadow-[0_0_6px_#FFD700]">Let’s Build Together</h3>
+<p class="text-gray-400 mb-6">Looking to connect? Email us at <a class="underline" href="mailto:info@a-levelrntertainmentgroup.com">info@a-levelrntertainmentgroup.com</a></p>
+<div class="flex justify-center space-x-6 text-lg">
+<a class="hover:text-gray-300" href="#">Instagram</a>
+<a class="hover:text-gray-300" href="#">Twitter</a>
+<a class="hover:text-gray-300" href="#">YouTube</a>
+</div>
+</section>
+<footer class="py-6 text-center text-sm text-gray-600">
+    © 2025 A-Level Entertainment. All rights reserved.
   </footer>
-
-  <script>
+<script>
     const fadeInElements = document.querySelectorAll('.fade-in');
     const handleFadeInScroll = () => {
       fadeInElements.forEach(el => {
@@ -255,6 +285,5 @@ SNACO is building his own lane, bar for bar.</p>
     window.addEventListener('scroll', handleFadeInScroll);
     window.addEventListener('load', handleFadeInScroll);
   </script>
-
 </body>
 </html>
